@@ -1,4 +1,6 @@
 require('./game.js');
+const expect = require('expect');
+
 
 describe("The test environment", function() {
   it("should pass", function() {
