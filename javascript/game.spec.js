@@ -1,17 +1,44 @@
 require('./game.js');
-const expect = require('expect');
+const sinon = require('sinon');
+const sinonChai = require('sinon-chai');
+const chai = require('chai').use(sinonChai);
+
+const { expect } = chai;
 
 
-describe("The test environment", function() {
-  it("should pass", function() {
-    expect(true).toBe(true);
-  });
-
-  it("should access game", function() {
-    expect(Game).toBeDefined();
-  });
+describe("The test environment", () => {
+  it("should pass", () => expect(true).to.eq(true));
+  it("should access game", () => expect(Game).not.to.be.undefined);
 });
 
-describe("Your specs...", function() {
-  // it ...
+describe("Your specs...", () => {
+
+  describe('#createRockQuestion', () => {
+
+  });
+
+  describe('#isPlayable', () => {
+
+  });
+
+  describe('#add', () => {
+
+  });
+
+  describe('#howManyPlayers', () => {
+
+  });
+
+  describe('#roll', () => {
+
+  });
+
+  describe('#wasCorrectlyAnswered', () => {
+
+  });
+
+  describe('#wrongAnswer', () => {
+
+  });
+
 });
